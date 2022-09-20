@@ -8,6 +8,7 @@ internal class PingedNotificationHandler : INotificationHandler<PingedNotificati
     public Task Handle(PingedNotification notification, CancellationToken cancellationToken)
     {
         Debug.WriteLine(notification.Value);
-        return Task.CompletedTask;
+        throw new Exception("teste");
+        //return Task.CompletedTask;
     }
 }
